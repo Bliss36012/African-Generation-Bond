@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Generation Bond | Impact & Capital Portal</title>
+    <meta name="description" content="Connecting visionary African youth with global capital to fuel sustainable development and intergenerational economic growth.">
+    
+    <!-- Open Graph & Social -->
+    <meta property="og:title" content="African Generation Bond | Impact & Capital Portal">
+    <meta property="og:description" content="Connecting visionary African youth with global capital to fuel sustainable development and intergenerational economic growth.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0F172A',
+                            900: '#0A192F',
+                            950: '#030712',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#D97706',
+                            600: '#B45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+        }
+        .navy-gradient {
+            background: linear-gradient(135deg, #0A192F 0%, #0F172A 100%);
+        }
+        .hero-pattern {
+            background-color: #0A192F;
+            background-image: radial-gradient(#D97706 0.75px, transparent 0.75px), radial-gradient(#D97706 0.75px, #0A192F 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+<script src="/_aistudio-iframe.js?v=6634132a"></script></head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- ========================================== -->
+    <!-- HEADER                                     -->
+    <!-- ========================================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0A192F]/95 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-400 p-1 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform overflow-hidden">
+                        <img src="https://ais-pre-giaovf2eiaqmbhsghfrmmj-848284139344.europe-west2.run.app/assets/aistudio/african-generation-bond-original-transparent_32b5cb3d.png" 
+                             alt="African Generation Bond Logo" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                             class="w-full h-full object-contain filter drop-shadow-sm">
+                        <i class="fas fa-tree text-slate-950 text-xl hidden"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading text-lg font-extrabold tracking-tight text-white group-hover:text-amber-400 transition-colors">African Generation Bond</span>
+                        <span class="text-[10px] tracking-widest text-amber-400 font-semibold uppercase">Impact & Capital Portal</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-5">
+                    <a href="#vision" class="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors">Vision</a>
+                    <a href="#enterprises" class="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors">Enterprises</a>
+                    <a href="#showcase" class="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors">Opportunities</a>
+                    <a href="#how-it-works" class="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors">How It Works</a>
+                    <a href="#join-waitlist" class="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors">Portal Access</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="hidden sm:flex items-center space-x-2">
+                    <button onclick="downloadDesktopShortcut()" class="border border-slate-700 hover:border-amber-400 bg-slate-900/80 hover:bg-slate-800 text-slate-200 px-2.5 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer" title="Download Desktop Shortcut">
+                        <i class="fas fa-desktop text-amber-400 text-xs"></i>
+                        <span>Desktop Icon</span>
+                    </button>
+                    <button onclick="openShareModal()" class="border border-slate-700 hover:border-sky-400 bg-slate-900/80 hover:bg-slate-800 text-slate-200 px-2.5 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer" title="Share Portal Link">
+                        <i class="fas fa-share-nodes text-sky-400 text-xs"></i>
+                        <span>Share</span>
+                    </button>
+                    <button onclick="openModal('registerEnterpriseModal')" class="border border-amber-500/50 hover:bg-amber-500/10 text-amber-400 px-3.5 py-2 rounded-xl text-xs uppercase font-bold tracking-wider transition-all cursor-pointer">
+                        Register
+                    </button>
+                    <button onclick="openModal('orderTechModal')" class="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 font-bold px-3.5 py-2 rounded-xl shadow-lg shadow-amber-500/20 text-xs uppercase tracking-wider transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                        Request Services
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none cursor-pointer">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#0A192F] border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#vision" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-300 hover:text-amber-400">Vision</a>
+            <a href="#enterprises" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-300 hover:text-amber-400">Enterprises</a>
+            <a href="#showcase" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-300 hover:text-amber-400">Opportunities</a>
+            <a href="#how-it-works" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-300 hover:text-amber-400">How It Works</a>
+            <a href="#join-waitlist" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-300 hover:text-amber-400">Portal Access</a>
+            <div class="pt-4 flex flex-col gap-2">
+                <button onclick="downloadDesktopShortcut(); toggleMobileMenu()" class="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-slate-700 bg-slate-900 text-slate-200">
+                    <i class="fas fa-desktop text-amber-400 mr-2"></i> Desktop Shortcut
+                </button>
+                <button onclick="openShareModal(); toggleMobileMenu()" class="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-slate-700 bg-slate-900 text-slate-200">
+                    <i class="fas fa-share-nodes text-sky-400 mr-2"></i> Share Portal Link
+                </button>
+                <button onclick="openModal('registerEnterpriseModal'); toggleMobileMenu()" class="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-amber-500/50 text-amber-400">
+                    Register Enterprise
+                </button>
+                <button onclick="openModal('orderTechModal'); toggleMobileMenu()" class="w-full text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider gold-gradient text-slate-950">
+                    Request Services
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 navy-gradient hero-pattern overflow-hidden text-white">
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-medium text-amber-400">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        Connecting Global Diaspora Capital to African Innovation
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading leading-tight tracking-tight">
+                        Building Generational Wealth. <br class="hidden sm:inline" />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400">
+                            Empowering African Innovation.
+                        </span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        The digital platform connecting global diaspora investors and strategic partners with high-impact, youth-led African startups and local businesses needing growth capital.
+                    </p>
+
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#join-waitlist" onclick="switchFormTab('investor')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider gold-gradient text-slate-950 shadow-xl shadow-amber-500/20 hover:scale-105 active:scale-95 transition-all text-center">
+                            Invest in Impact
+                        </a>
+                        <a href="#join-waitlist" onclick="switchFormTab('founder')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white hover:border-amber-400/50 transition-all text-center">
+                            Submit Your Startup
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 border-t border-slate-800/80">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-400"></i>
+                            <span>Vetted Youth Founders</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-400"></i>
+                            <span>Direct Transparent Investment</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-emerald-400"></i>
+                            <span>Milestone Governance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card Metrics -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md bg-slate-900/90 border border-slate-700/80 rounded-2xl p-6 shadow-2xl backdrop-blur-xl">
+                        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold font-heading">
+                                    AGB
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Live Portal Metrics</p>
+                                    <p class="text-xs text-slate-400">Target Launch Pipeline</p>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                                Active Cohort
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 my-6">
+                            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
+                                <p class="text-xs text-slate-400 mb-1">Target Capital</p>
+                                <p class="text-2xl font-extrabold text-white font-heading">$500,000</p>
+                                <p class="text-[10px] text-amber-400 mt-1">Tranche 1 Pilot</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
+                                <p class="text-xs text-slate-400 mb-1">Target Returns</p>
+                                <p class="text-2xl font-extrabold text-emerald-400 font-heading">12% - 18%</p>
+                                <p class="text-[10px] text-slate-400 mt-1">Projected Annualized</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
+                                <p class="text-xs text-slate-400 mb-1">Focus Sectors</p>
+                                <p class="text-2xl font-extrabold text-white font-heading">4 Key</p>
+                                <p class="text-[10px] text-slate-400 mt-1">Agri, Tech, Solar, SME</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50">
+                                <p class="text-xs text-slate-400 mb-1">Youth Jobs Target</p>
+                                <p class="text-2xl font-extrabold text-amber-400 font-heading">1,500+</p>
+                                <p class="text-[10px] text-emerald-400 mt-1">Direct & Indirect</p>
+                            </div>
+                        </div>
+
+                        <a href="#join-waitlist" class="block w-full py-3 rounded-xl text-center font-bold text-xs uppercase tracking-wider bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 transition-all">
+                            View Early Allocation Tranches &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- DIRECT INTERACTION & DOCUMENTS HUB         -->
+    <!-- ========================================== -->
+    <section class="py-12 bg-slate-900 border-y border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block mb-1">Direct Interaction & Documents Suite</span>
+                    <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Connect via WhatsApp, Email, Google & Office Formats</h3>
+                </div>
+                <p class="text-xs text-slate-400 max-w-md">
+                    One-click tools to sync with Google Calendar, chat on WhatsApp, export registrations into Excel, or download proposals in Word, PDF, and PPT.
+                </p>
+            </div>
+
+            <!-- Quick Action Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+                <button onclick="openWhatsAppChat()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fab fa-whatsapp text-emerald-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">WhatsApp</span>
+                    <span class="text-[10px] text-slate-400">Direct Chat</span>
+                </button>
+                <button onclick="openEmailDesk()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-envelope text-amber-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Email Desk</span>
+                    <span class="text-[10px] text-slate-400">Direct Mailto</span>
+                </button>
+                <button onclick="openGoogleCalendar()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-sky-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-calendar-alt text-sky-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Google</span>
+                    <span class="text-[10px] text-slate-400">Add to Cal</span>
+                </button>
+                <button onclick="exportToExcel()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-file-excel text-emerald-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Excel</span>
+                    <span class="text-[10px] text-slate-400">Export .xlsx</span>
+                </button>
+                <button onclick="downloadWordProposal()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-file-word text-blue-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Word</span>
+                    <span class="text-[10px] text-slate-400">Proposal .doc</span>
+                </button>
+                <button onclick="window.print()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-file-pdf text-red-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">PDF</span>
+                    <span class="text-[10px] text-slate-400">Print / Save</span>
+                </button>
+                <button onclick="downloadDesktopShortcut()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-desktop text-amber-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Desktop Icon</span>
+                    <span class="text-[10px] text-slate-400">Launcher .url</span>
+                </button>
+                <button onclick="openShareModal()" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-sky-400 transition-all flex flex-col items-center justify-center text-center cursor-pointer">
+                    <i class="fas fa-share-nodes text-sky-400 text-xl mb-1.5"></i>
+                    <span class="text-xs font-bold text-white block">Share Link</span>
+                    <span class="text-[10px] text-slate-400">Copy / QR</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- OPPORTUNITIES SHOWCASE                     -->
+    <!-- ========================================== -->
+    <section id="showcase" class="py-20 bg-slate-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Deal Flow Pipeline</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-white">Vetted Investment Opportunities</h2>
+                    <p class="text-sm text-slate-400 mt-2 max-w-xl">
+                        Explore high-potential, youth-founded African enterprises pre-vetted for governance, traction, and sustainable yield.
+                    </p>
+                </div>
+
+                <!-- Opportunity Controls (Delete, Add, Reset) -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="deleteAllOpportunities()" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-red-950/40 text-red-400 border border-red-800 hover:bg-red-900/50 cursor-pointer flex items-center gap-1.5" title="Clear all vetted opportunities">
+                        <i class="fas fa-trash-can"></i>
+                        <span>Delete All</span>
+                    </button>
+                    <button onclick="openAddOpportunityModal()" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-amber-500 text-slate-950 hover:bg-amber-400 cursor-pointer flex items-center gap-1.5">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Opportunity</span>
+                    </button>
+                    <button onclick="resetOpportunities()" class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800 hover:bg-slate-800 cursor-pointer">
+                        <i class="fas fa-rotate-left mr-1"></i> Reset Sample
+                    </button>
+                </div>
+            </div>
+
+            <!-- Opportunities Grid -->
+            <div id="opportunities-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamically rendered by JS -->
+            </div>
+            
+            <div id="no-opportunities-banner" class="hidden text-center py-16 px-4 bg-slate-900/50 rounded-2xl border border-dashed border-slate-800 my-4">
+                <i class="fas fa-folder-open text-4xl text-slate-600 mb-3"></i>
+                <h4 class="text-lg font-bold text-slate-300">No Vetted Investment Opportunities Listed</h4>
+                <p class="text-xs text-slate-500 max-w-md mx-auto mt-1 mb-4">
+                    All sample opportunities have been cleared. Click "Add Opportunity" above or register your enterprise below to list new deals.
+                </p>
+                <button onclick="openModal('registerEnterpriseModal')" class="px-4 py-2 rounded-xl text-xs font-bold uppercase gold-gradient text-slate-950">
+                    Register New Enterprise
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- WAITLIST & PORTAL APPLICATION              -->
+    <!-- ========================================== -->
+    <section id="join-waitlist" class="py-20 navy-gradient text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 uppercase tracking-widest">
+                    Exclusive Priority Portal
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white mt-4">Join the African Generation Bond</h2>
+                <p class="text-slate-300 text-sm sm:text-base mt-2">
+                    Secure your priority spot in our inaugural tranche or submit your youth enterprise for validation.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                <!-- Tabs -->
+                <div class="flex border-b border-slate-800 mb-8">
+                    <button id="tab-investor" onclick="switchFormTab('investor')" class="flex-1 py-3 text-sm font-bold text-amber-400 border-b-2 border-amber-400 transition-all text-center cursor-pointer">
+                        Diaspora Investor
+                    </button>
+                    <button id="tab-founder" onclick="switchFormTab('founder')" class="flex-1 py-3 text-sm font-bold text-slate-400 border-b-2 border-transparent hover:text-slate-200 transition-all text-center cursor-pointer">
+                        Startup Founder / SME
+                    </button>
+                </div>
+
+                <!-- Investor Form -->
+                <form id="investor-form" onsubmit="handleInvestorSubmit(event)" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Full Name *</label>
+                            <input type="text" id="inv-name" required placeholder="Kwame Mensah" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Email Address *</label>
+                            <input type="email" id="inv-email" required placeholder="kwame@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Country of Residence</label>
+                            <input type="text" id="inv-country" required placeholder="United Kingdom / USA / Diaspora" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Target Ticket Size</label>
+                            <select id="inv-ticket" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                                <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                <option value="$5,000 - $25,000">$5,000 - $25,000</option>
+                                <option value="$25,000 - $100,000">$25,000 - $100,000</option>
+                                <option value="$100,000+">$100,000+ (Institutional)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider gold-gradient text-slate-950 hover:shadow-lg transition-all cursor-pointer">
+                        Pledge Interest & Request Term Sheet
+                    </button>
+                </form>
+
+                <!-- Founder Form -->
+                <form id="founder-form" onsubmit="handleFounderSubmit(event)" class="space-y-5 hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Founder Name *</label>
+                            <input type="text" id="fnd-name" required placeholder="Amina Bello" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Startup / Enterprise Name *</label>
+                            <input type="text" id="fnd-biz" required placeholder="KaziSolar Tech" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Country of Operation</label>
+                            <input type="text" id="fnd-country" required placeholder="Kenya / Ghana / Nigeria" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Growth Capital Needed</label>
+                            <input type="text" id="fnd-funding" required placeholder="$25,000" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all cursor-pointer">
+                        Submit Enterprise for Vetting
+                    </button>
+                </form>
+
+                <!-- Confirmation Card -->
+                <div id="confirmation-card" class="hidden p-6 rounded-xl bg-slate-950 border border-emerald-500/50 text-center space-y-3">
+                    <i class="fas fa-check-circle text-3xl text-emerald-400"></i>
+                    <h4 class="text-lg font-bold text-white">Application Recorded Successfully!</h4>
+                    <p class="text-xs text-slate-300 max-w-md mx-auto" id="confirmation-text">
+                        Your submission has been safely saved to the African Generation Bond Priority Queue.
+                    </p>
+                    <button onclick="resetForms()" class="px-5 py-2 rounded-xl text-xs font-bold uppercase bg-slate-800 text-slate-300 hover:text-white cursor-pointer">
+                        Submit Another
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-800 text-slate-400 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <span class="font-heading text-base font-extrabold text-white">African Generation Bond</span>
+                <span class="text-amber-400">• Generational Impact & Capital Portal</span>
+            </div>
+            <p class="max-w-xl mx-auto text-slate-500">
+                Bridging generational wealth, diaspora capital, and African youth ingenuity. Ready for GitHub Pages hosting.
+            </p>
+            <p class="text-[11px] text-slate-600">
+                &copy; <script>document.write(new Date().getFullYear())</script> African Generation Bond. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- MODALS                                     -->
+    <!-- ========================================== -->
+    <!-- Share Modal -->
+    <div id="shareModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
+            <button onclick="closeModal('shareModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white cursor-pointer">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <h3 class="text-xl font-bold font-heading text-white mb-1">Share Portal Link</h3>
+            <p class="text-xs text-amber-400 mb-4">Send this link to anyone who needs to view or register on the portal</p>
+            
+            <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-2 mb-4">
+                <input type="text" id="share-url-input" readonly class="w-full bg-transparent text-amber-300 font-mono text-xs px-2 focus:outline-none truncate">
+                <button onclick="copyShareUrl()" class="px-3.5 py-1.5 rounded-lg bg-amber-500 text-slate-950 text-xs font-bold whitespace-nowrap cursor-pointer">
+                    <span id="copy-btn-text">Copy</span>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                <button onclick="shareViaWhatsApp()" class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500 text-white cursor-pointer">
+                    <i class="fab fa-whatsapp text-emerald-400 block text-lg mb-1"></i> WhatsApp
+                </button>
+                <button onclick="shareViaEmail()" class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 text-white cursor-pointer">
+                    <i class="fas fa-envelope text-amber-400 block text-lg mb-1"></i> Email
+                </button>
+                <button onclick="window.print()" class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-sky-400 text-white cursor-pointer">
+                    <i class="fas fa-print text-sky-400 block text-lg mb-1"></i> Print / PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Request Tech Services Modal -->
+    <div id="orderTechModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('orderTechModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white cursor-pointer">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <h3 class="text-xl font-bold font-heading text-white mb-1">Flagship Tech & Design Studio</h3>
+            <p class="text-xs text-amber-400 mb-4">Request enterprise web portals, mobile apps, or pitch decks</p>
+            <form onsubmit="handleTechSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
+                    <input type="text" required class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Email / WhatsApp</label>
+                    <input type="text" required class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Services Needed</label>
+                    <textarea rows="3" required placeholder="Describe what digital product or service your enterprise needs..." class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl font-bold text-xs uppercase gold-gradient text-slate-950">
+                    Send Service Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Enterprise Modal -->
+    <div id="registerEnterpriseModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('registerEnterpriseModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white cursor-pointer">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <h3 class="text-xl font-bold font-heading text-white mb-1">Register Youth Enterprise</h3>
+            <p class="text-xs text-amber-400 mb-4">Apply for incubation & early growth tranche allocation</p>
+            <form onsubmit="handleEnterpriseSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Enterprise Name</label>
+                    <input type="text" required class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Sector & Country</label>
+                    <input type="text" required placeholder="e.g. Clean Energy • Kenya" class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Capital Required ($USD)</label>
+                    <input type="text" required placeholder="$50,000" class="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs">
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl font-bold text-xs uppercase bg-amber-500 hover:bg-amber-400 text-slate-950">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS                                    -->
+    <!-- ========================================== -->
+    <script>
+        // Default initial opportunities
+        const DEFAULT_OPPORTUNITIES = [
+            {
+                id: 1,
+                name: "AfroAgri ColdChain",
+                sector: "AgriTech",
+                country: "Kenya",
+                fundingGoal: "$50,000",
+                returnProjection: "14% - 18%",
+                shortDesc: "Solar-powered off-grid micro cold storage for smallholder horticultural farmers.",
+                founder: "Amina K. (Age 26)"
+            },
+            {
+                id: 2,
+                name: "SoliVolt Mini-Grids",
+                sector: "Clean Energy",
+                country: "Rwanda",
+                fundingGoal: "$75,000",
+                returnProjection: "12% - 16%",
+                shortDesc: "Decentralized pay-as-you-go solar grids powering rural health clinics and youth hubs.",
+                founder: "Jean-Paul M. (Age 29)"
+            },
+            {
+                id: 3,
+                name: "TradeFlow West Africa",
+                sector: "FinTech",
+                country: "Nigeria",
+                fundingGoal: "$100,000",
+                returnProjection: "15% - 20%",
+                shortDesc: "Cross-border B2B trade liquidity and invoice financing for young cross-border merchants.",
+                founder: "Oluwaseun A. (Age 28)"
+            }
+        ];
+
+        let opportunities = [];
+        try {
+            const stored = localStorage.getItem('agb_opportunities');
+            opportunities = stored ? JSON.parse(stored) : [...DEFAULT_OPPORTUNITIES];
+        } catch(e) {
+            opportunities = [...DEFAULT_OPPORTUNITIES];
+        }
+
+        function renderOpportunities() {
+            const grid = document.getElementById('opportunities-grid');
+            const emptyBanner = document.getElementById('no-opportunities-banner');
+            
+            if (opportunities.length === 0) {
+                grid.innerHTML = '';
+                emptyBanner.classList.remove('hidden');
+                return;
+            }
+
+            emptyBanner.classList.add('hidden');
+            grid.innerHTML = opportunities.map(opp => `
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                                ${opp.sector} • ${opp.country}
+                            </span>
+                            <button onclick="deleteSingleOpportunity(${opp.id})" class="text-slate-500 hover:text-red-400 p-1 cursor-pointer transition-colors" title="Delete this opportunity">
+                                <i class="fas fa-trash-alt text-xs"></i>
+                            </button>
+                        </div>
+                        <h3 class="text-xl font-bold font-heading text-white group-hover:text-amber-400 transition-colors mb-2">${opp.name}</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-4">${opp.shortDesc}</p>
+                    </div>
+                    <div>
+                        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs space-y-1 mb-4">
+                            <div class="flex justify-between text-slate-400">
+                                <span>Goal:</span>
+                                <span class="font-bold text-white">${opp.fundingGoal}</span>
+                            </div>
+                            <div class="flex justify-between text-slate-400">
+                                <span>Target Return:</span>
+                                <span class="font-bold text-emerald-400">${opp.returnProjection}</span>
+                            </div>
+                        </div>
+                        <a href="#join-waitlist" onclick="switchFormTab('investor')" class="block w-full py-2.5 rounded-xl text-center font-bold text-xs uppercase gold-gradient text-slate-950">
+                            Pledge Interest
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function deleteSingleOpportunity(id) {
+            opportunities = opportunities.filter(o => o.id !== id);
+            localStorage.setItem('agb_opportunities', JSON.stringify(opportunities));
+            renderOpportunities();
+        }
+
+        function deleteAllOpportunities() {
+            if (confirm("Are you sure you want to delete all vetted investment opportunities?")) {
+                opportunities = [];
+                localStorage.setItem('agb_opportunities', JSON.stringify([]));
+                renderOpportunities();
+            }
+        }
+
+        function resetOpportunities() {
+            opportunities = [...DEFAULT_OPPORTUNITIES];
+            localStorage.setItem('agb_opportunities', JSON.stringify(opportunities));
+            renderOpportunities();
+        }
+
+        function openAddOpportunityModal() {
+            const name = prompt("Enter Enterprise Name:");
+            if (!name) return;
+            const sector = prompt("Enter Sector (e.g. AgriTech, Solar, FinTech):") || "Enterprise";
+            const country = prompt("Enter Country (e.g. Kenya, Ghana, Uganda):") || "Pan-Africa";
+            const fundingGoal = prompt("Enter Funding Goal (e.g. $50,000):") || "$50,000";
+            const newOpp = {
+                id: Date.now(),
+                name,
+                sector,
+                country,
+                fundingGoal,
+                returnProjection: "12% - 18%",
+                shortDesc: "Vetted African youth-led enterprise in active deployment tranche.",
+                founder: "Founding Team"
+            };
+            opportunities.push(newOpp);
+            localStorage.setItem('agb_opportunities', JSON.stringify(opportunities));
+            renderOpportunities();
+        }
+
+        // --- Modals & Menus ---
+        function openModal(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.remove('hidden');
+                el.classList.add('flex');
+            }
+        }
+
+        function closeModal(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.add('hidden');
+                el.classList.remove('flex');
+            }
+        }
+
+        function toggleMobileMenu() {
+            const el = document.getElementById('mobile-menu');
+            if (el) el.classList.toggle('hidden');
+        }
+
+        // --- Share & Desktop Icon Actions ---
+        function openShareModal() {
+            const shareUrl = window.location.href.split('#')[0];
+            document.getElementById('share-url-input').value = shareUrl;
+            openModal('shareModal');
+        }
+
+        function copyShareUrl() {
+            const input = document.getElementById('share-url-input');
+            input.select();
+            navigator.clipboard.writeText(input.value);
+            const btn = document.getElementById('copy-btn-text');
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+        }
+
+        function downloadDesktopShortcut() {
+            const currentUrl = window.location.href.split('#')[0];
+            const fileContent = `[InternetShortcut]\nURL=${currentUrl}\nIconIndex=0\n`;
+            const blob = new Blob([fileContent], { type: 'application/octet-stream' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'African Generation Bond.url';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            alert("Desktop shortcut downloaded! Drag 'African Generation Bond.url' onto your Desktop to launch anytime.");
+        }
+
+        function openWhatsAppChat() {
+            const msg = encodeURIComponent("Hello African Generation Bond desk, I am interested in exploring opportunities & partnerships.");
+            window.open(`https://api.whatsapp.com/send?text=${msg}`, '_blank');
+        }
+
+        function openEmailDesk() {
+            const subject = encodeURIComponent("African Generation Bond Inquiry");
+            const body = encodeURIComponent("Hello Team,\n\nI would like to inquire about the African Generation Bond platform.\n\nBest regards,");
+            window.location.href = `mailto:invest@africangenerationbond.org?subject=${subject}&body=${body}`;
+        }
+
+        function openGoogleCalendar() {
+            const title = encodeURIComponent("African Generation Bond Briefing");
+            const details = encodeURIComponent("Briefing on diaspora capital and youth enterprise tranches.");
+            window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}`, '_blank');
+        }
+
+        function exportToExcel() {
+            const csv = "ID,Name,Type,Timestamp\n1,Demo Entry,Investor,2026-10-22\n";
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'AGB_Portal_Registrations.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function downloadWordProposal() {
+            const content = "African Generation Bond\nExecutive Summary & Proposal Deck\nConnecting global diaspora capital with African youth enterprises.";
+            const blob = new Blob([content], { type: 'application/msword' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'African_Generation_Bond_Proposal.doc';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function switchFormTab(tab) {
+            const invTab = document.getElementById('tab-investor');
+            const fndTab = document.getElementById('tab-founder');
+            const invForm = document.getElementById('investor-form');
+            const fndForm = document.getElementById('founder-form');
+            const conf = document.getElementById('confirmation-card');
+            
+            conf.classList.add('hidden');
+
+            if (tab === 'investor') {
+                invTab.className = "flex-1 py-3 text-sm font-bold text-amber-400 border-b-2 border-amber-400 transition-all text-center cursor-pointer";
+                fndTab.className = "flex-1 py-3 text-sm font-bold text-slate-400 border-b-2 border-transparent hover:text-slate-200 transition-all text-center cursor-pointer";
+                invForm.classList.remove('hidden');
+                fndForm.classList.add('hidden');
+            } else {
+                fndTab.className = "flex-1 py-3 text-sm font-bold text-amber-400 border-b-2 border-amber-400 transition-all text-center cursor-pointer";
+                invTab.className = "flex-1 py-3 text-sm font-bold text-slate-400 border-b-2 border-transparent hover:text-slate-200 transition-all text-center cursor-pointer";
+                fndForm.classList.remove('hidden');
+                invForm.classList.add('hidden');
+            }
+        }
+
+        function handleInvestorSubmit(e) {
+            e.preventDefault();
+            document.getElementById('investor-form').classList.add('hidden');
+            document.getElementById('confirmation-card').classList.remove('hidden');
+        }
+
+        function handleFounderSubmit(e) {
+            e.preventDefault();
+            document.getElementById('founder-form').classList.add('hidden');
+            document.getElementById('confirmation-card').classList.remove('hidden');
+        }
+
+        function resetForms() {
+            document.getElementById('investor-form').reset();
+            document.getElementById('founder-form').reset();
+            switchFormTab('investor');
+        }
+
+        function handleTechSubmit(e) {
+            e.preventDefault();
+            closeModal('orderTechModal');
+            alert('Service request received! Our flagship tech team will reach out.');
+        }
+
+        function handleEnterpriseSubmit(e) {
+            e.preventDefault();
+            closeModal('registerEnterpriseModal');
+            alert('Enterprise registration submitted! We will review your application.');
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            renderOpportunities();
+        };
+    </script>
+</body>
+</html>
